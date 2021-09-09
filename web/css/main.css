@@ -1,0 +1,45 @@
+html {
+    height: calc(100% - 8px);
+    border: solid black 3px;
+    margin: 1px;
+}
+
+input {
+    width: calc(calc(100% / 5) - 11px);
+    margin: auto;
+    height: 25px;
+    margin-left: 1px;
+}
+
+.lineDown {
+    border-bottom: solid 3px black;
+}
+.folderImg {
+    width: 90px;
+    border-radius: 50%;
+}
+.icon {
+    width: 50px;
+}
+.num {
+    font-size: 15px;
+    width: 20px;
+    font-weight: 600;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    background: rgb(4, 127, 243);
+    line-height: 20px;
+}
+.btnImg {
+    width: 20px;
+    margin-left: -10px;
+    position: relative;
+    top: calc(50% - 10px);
+}
+.btnText {
+    width: 20px;
+    position: relative;
+    top: calc(50% - 15px);
+}

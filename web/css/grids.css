@@ -1,0 +1,80 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    grid-template-rows: 60px  45px calc(100vh - 170px);
+    overflow-y: hidden;
+}
+.appName {
+    grid-column: 1 / 6;
+    grid-row: 1;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+.foldersAdd {
+    grid-column: 1 / 6;
+    grid-row: 2;
+}
+.foldersCont {
+    grid-column: 1 / 6;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: calc(calc(100% / 2) - 5px) calc(calc(100% / 2) - 5px);
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}
+
+/*
+Grid container folders
+*/
+
+.folder {
+    display: grid;
+    background: rgb(145, 163, 184);
+    padding: 5px;
+    grid-template-columns: 95px calc(100% - 245px) 150px;
+    grid-template-rows: 25px 20px 30px;
+}
+.folderImg {
+    grid-column: 1;
+    grid-row: 1;
+}
+.folderName {
+    font-size: 20px;
+    grid-column: 2;
+    grid-row: 2;
+}
+.tablaName {
+    grid-column: 2;
+    grid-row: 3;
+    color:rgb(49, 67, 85);
+}
+.Iconos {
+    grid-column: 3;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+/*
+Grid for 
+*/
+.logs {
+    grid-column: 1;
+    grid-row: 1;
+}
+.pend, .numPend {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.error, .numError {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.runJob {
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
